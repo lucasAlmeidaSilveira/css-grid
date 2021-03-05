@@ -1,0 +1,42 @@
+html,
+body {
+    background: #7d1314;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: yellow;
+    grid-area: h;
+    /* definição do nome da area */
+}
+
+main {
+    background: blue;
+    grid-area: m;
+    /* definição do nome da area */
+}
+
+aside {
+    background: green;
+    grid-area: a;
+    /* definição do nome da area */
+}
+
+footer {
+    background: red;
+    grid-area: f;
+    /* definição do nome da area */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    /* margin entre linhas */
+    /*     grid-gap: 20px; */
+    /* margin entre colunas */
+    /*     grid-column-gap: 20px; */
+    grid-template-areas: "h h" "m a" "f f"/* definição do local das areas */
+}
